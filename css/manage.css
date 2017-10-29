@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+
+div#edit {
+	margin:20px;
+}
+
+#edit th, #edit td {
+	margin:5px;
+	padding:10px;
+}
+
+#edit th {
+	border-right:2px #bcbcff solid;
+}
+
+#edit #button_submit {
+	width:6em;
+}
+
+#edit #buttonrow {
+	text-align:right;
+}
+
+#edit textarea {
+	resize:none;
+}

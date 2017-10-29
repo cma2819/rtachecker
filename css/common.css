@@ -1,0 +1,117 @@
+﻿@charset "utf-8";
+
+/* HTML標準設定 */
+html {
+	font-family:'ヒラギノ角ゴシック', 'Hiragino Sans', 
+	'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 
+	'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color:#202020;
+}
+
+/* 背景・文字色 */
+body {
+	background-color:#feffff;
+	padding:0;
+
+}
+
+a, a:active,a :hover, a:visited {
+	color:#0066FF;
+	text-decoration:none;
+}
+
+/* Wrapper */
+#wrapper {
+	width:90%;
+	max-width:1000px;
+	padding:0px 20px;
+	margin:0 auto;
+}
+
+/* Header */
+#header {
+	background-color:rgba(211, 211, 255, 0.60);
+	width:100%;
+	min-width:720px;
+	height:50px;
+	margin-bottom:10px;
+	/*border-bottom:2px #bcbcff solid;*/
+	position:fixed;
+	top:0px;
+	left:0px;
+	vertical-align:bottom;
+}
+#header #block {
+	overflow:hidden;
+	width:90%;
+	margin:0 auto;
+}
+#header h1 {
+	margin:0px;
+	width:320px;
+	display:inline-block;
+	float:left;
+}
+#header h1 a{
+	color:#202020;
+}
+#header span.icon_menu {
+	border:2px #bcbcff solid;
+	padding:4px;
+	display:inline-block;
+	/* 未実装のため */
+	display:none;
+	float:right;
+	background-color: white;
+	text-align:center;
+	vertical-align:middle;
+	height:36px;
+	cursor:pointer;
+}
+#header .list_menu {
+	margin-top:20px;
+	display:inline-block;
+	float:right;
+	color:#202020;
+	vertical-align:middle;
+}
+#header .list_menu a{
+	color:#202020;
+
+	padding-top:5px;
+	padding-left:10px;
+	padding-right:48px;
+}
+#header .list_menu a:hover{
+	border-bottom:2px #404040 solid;
+	background-color:rgba(255,255,255,0.5)
+}
+#header div#head_menu{
+	float:right;
+}
+
+#header h2 {
+	margin-top:0;
+	margin-bottom:0;
+	text-align:right;
+}
+/* ヘッダ分の余白 */
+div#margin_head {
+	height:50px;
+}
+
+/* Body */
+#body {
+	width:100%;
+	padding-bottom:50px;
+}
+
+/* Footer */
+#footer{
+	height:100px;
+	border-top:2px #bcbcff solid;
+}
+
+#footer p{
+	text-align:right;
+}

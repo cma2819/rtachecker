@@ -1,0 +1,192 @@
+﻿@charset "utf-8";
+
+/* メインコンテンツ */
+div#list_main {
+	border-top:2px #bcbcff solid;
+	overflow:auto;
+}
+
+#body h3 {
+	text-align:center;
+	border-bottom:1px #bcbcff dashed;
+	margin:20px 0px;
+	padding:10px;
+}
+
+/* Stream */
+div.stream{
+	width:300px;
+	border:1px #bcbcff solid;
+	margin:5px;
+	background-color:#f9ffff;
+	float:left;
+}
+
+div.stream table{
+	height:100%;
+	width:100%;
+	border-collapse:collapse;
+	background-color:white;}
+
+div.stream table th,td {
+	border:1px #bcbcff solid;
+	padding:5px;
+}
+
+
+/* オンライン表記 */
+.stream td.online {
+	color:rgba(255,255,255,0);
+	margin:0px;
+	padding:0px;
+	background-image:url('../img/online.png');
+}
+
+/* オフライン表記 */
+.stream td.offline {
+	color:rgba(255,255,255,0);
+	margin:0px;
+	padding:0px;
+	background-image:url('../img/offline.png');
+}
+
+
+/* Twitchアイコン */
+span.icon_twitch {
+	background-image:url('../img/icon_twitch.png');
+	background-repeat:no-repeat;	display:inline-block;
+	vertical-align:middle;
+	width:25px;
+	height:25px;
+	margin:2px;
+}
+
+/* ニコ生アイコン */
+span.icon_nicolive {
+	background-image:url('../img/icon_nico.png');
+	background-repeat:no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	width:25px;
+	height:25px;
+	margin:2px;
+}
+
+/* ゲームアイコン */
+.stream span.icon_game {
+	text-align:center;
+	background-repeat:no-repeat;
+	display:inline-block;
+	vertical-align:middle;
+	width:50px;
+	height:25px;
+	border-right:2px #bcbcff solid;
+	margin-right:5px;
+	}
+
+
+/* 配信情報列 */
+.stream table tr.status {
+	height:50px;
+}
+.stream table td.td_stream {
+	font-size:smaller;
+}
+.label_live {
+	text-align:center;
+	display:inline-block;
+	width:50px;
+	font-size:medium;
+	border-right:2px #bcbcff solid;
+	margin-right:5px;
+	padding:0px;
+}
+/* 名前列 */
+.stream table tr.name{
+	height:50px;
+	text-align:left;
+}
+
+.stream table tr.name .image{
+	width:50px;
+	padding:0px;
+}
+
+.stream table tr.name .image img{
+	vertical-align:bottom;	
+}
+
+.stream table tr.playing{
+	font-size:12px;
+}
+.stream table tr.playing img{
+	vertical-align:bottom;
+}
+
+.stream table tr.playing td {
+	height:52px;
+}
+
+.stream table tr.playing td div.topics{
+	width:100%;
+	height:52px;
+	overflow:auto;;
+}
+
+.stream table tr.playing td span.topic{
+	display:inline-block;
+}
+
+.stream table colgroup.col1 {
+	width:50px;
+}
+
+/* サブリスト */
+
+div#div_scroll {
+	overflow:auto;
+}
+
+#list_sub table {
+	border-style:none;
+	border-collapse:collapse;
+	table-layout:fixed;
+	width:640px;
+	margin:0px auto;
+	overflow:auto;
+
+}
+
+#list_sub th, #list_sub td {
+	border-style:none;
+	border-bottom:2px #bcbcff solid;
+	padding:5px;
+	margin:0px;
+
+}
+
+#list_sub .mark {
+	width:16px;
+}
+
+#list_sub .td_sub_player {
+	vertical-align:bottom;
+}
+
+#list_sub .td_sub_stream {
+	font-size:smaller;
+	width:250px;
+}
+
+/* 汎用 */
+
+/* マークアイコン */
+span.icon_mark {
+	display:inline-block;
+	vertical-align:middle;
+	width:12px;
+	height:12px;
+	background-color:#bcbcff;
+	margin:0px;
+}
+

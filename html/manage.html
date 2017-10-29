@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Manage - RTA Checker Beta</title>
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<link rel="stylesheet" href="css/manage.css" type="text/css" />
+</head>
+
+<body>
+<div id="header">
+	<div id="block">
+		<h1><a href="./index.html">RTA Checker</a></h1>
+		<span class="icon_menu">
+			<img alt="icon_menu" src="img/icon_menu.png" width="32px" height="32px" />
+		</span>
+		<div class="list_menu">
+			<a href="javascript:void(0)">登録申請</a>
+			<a href="javascript:void(0)">管理ページ</a>
+
+		</div>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div id="margin_head"></div>
+	<div id="edit">
+		<form method="GET" action="/index.html">
+			<table>
+				<tr>
+					<th>コマンド</th>
+					<td>
+						<select name="command">
+							<option value="1">Insert</option>
+							<option value="2">Update</option>
+							<option value="3">Delete</option>
+						</select>
+					</td>
+					<th>テーブル</th>
+					<td>
+						<select name="table">
+							<option value="user">user</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>パラメータ:検索</th>
+					<td colspan="3"><textarea cols="80" rows="10" name="param_search"></textarea></td>
+				</tr>
+				<tr>
+					<th>パラメータ:値</th>
+					<td colspan="3"><textarea cols="80" rows="10" name="param_value"></textarea></td>
+				</tr>
+
+				<tr>
+					<td colspan="4" id="buttonrow">
+						<input type="submit" value="実行" id="button_submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div id="footer">
+		<p>&copy; 2017 cma2819</p>
+	</div>
+</div>
+</body>
+
+</html>
