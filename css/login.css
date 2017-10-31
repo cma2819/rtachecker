@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+
+div#form {
+	margin:20px;
+}
+
+#form th, #form td {
+	margin:5px;
+	padding:10px;
+}
+
+#form th {
+	border-right:2px #bcbcff solid;
+}
+
+#form #button_submit {
+	width:6em;
+}
+
+#form #buttonrow {
+	text-align:right;
+}
+
+#form textarea {
+	resize:none;
+}
