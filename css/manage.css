@@ -73,3 +73,7 @@ div#ref td {
 div#ref tr.data:hover{
 	background-color:#f0f0ff;
 }
+
+div#ref td.refcol, div#ref td.idcol {
+	text-align:center;
+}

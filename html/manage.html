@@ -93,12 +93,12 @@
 					<th>アイコンパス</th>
 				</tr>
 				<tr class="data" id="1">
-					<td>1</td>
+					<td class="idcol">1</td>
 					<td class="u_name">Cma</td>
 					<td class="u_twitch">cma2819</td>
 					<td class="u_comid">co12345678</td>
 					<td>1.png</td>
-					<td><a href="javascript:updateById(1)">[ 編集 ]</a></td>
+					<td class="refcol"><a href="javascript:updateById(1)">[ 編集 ]</a></td>
 				</tr>
 			</table>
 		</div>
@@ -122,6 +122,10 @@
 					<tr>
 						<th>ニコニココミュニティ</th>
 						<td><input type="text" name="comid" /></td>
+					</tr>
+					<tr>
+						<th>削除</th>
+						<td><input type="checkbox" name="delete" value="1" /></td>
 					</tr>
 					<tr>
 						<td colspan="2" class="buttonrow">
