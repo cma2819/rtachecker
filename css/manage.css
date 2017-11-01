@@ -24,3 +24,52 @@ div#edit {
 #edit textarea {
 	resize:none;
 }
+
+div#input {
+	width:100%;
+	margin-bottom:50px;
+}
+
+div#input table {
+	width:100%;
+	border:2px #bcbcff solid;
+}
+
+div.form {
+	width:640px;
+	margin:10px auto;
+	display:none;
+}
+
+div.form table {
+	width:100%;
+}
+
+div.form th {
+	width:200px;
+	text-align:left;
+}
+
+div.form td.buttonrow {
+	text-align:right;
+}
+
+div#ref{
+	width:100%;
+	display:none;
+}
+
+div#ref table{
+	width:100%;
+	border-collapse:collapse;
+	border:2px #bcbcff solid;
+}
+
+div#ref td {
+	border-top:1px #bcbcff solid;
+	border-bottom:1px #bcbcff solid;
+}
+
+div#ref tr.data:hover{
+	background-color:#f0f0ff;
+}

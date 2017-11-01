@@ -6,6 +6,8 @@
 <title>Manage - RTA Checker Beta</title>
 <link rel="stylesheet" href="css/common.css" type="text/css" />
 <link rel="stylesheet" href="css/manage.css" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/manage.js" defer></script>
 </head>
 
 <body>
@@ -26,40 +28,109 @@
 <div id="wrapper">
 	<div id="margin_head"></div>
 	<div id="edit">
-		<form method="GET" action="/index.html">
+		<div id="input">
+			<form method="GET" action="/index.html">
+				<table>
+					<tr>
+						<th>操作</th>
+						<td colspan="2">
+							<select name="command" onchange="changePulldown()">
+								<option value="1" selected="selected">登録</option>
+								<option value="2">参照</option>
+								<option value="3">修正</option>
+							</select>
+						</td>					<th>テーブル</th>
+						<td>
+							<select name="table">
+								<option value="user">user</option>
+							</select>
+						</td>
+						<td>
+							<input type="submit" value="変更" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<!-- 登録時画面表示 -->
+		<div id="regist" class="form">
+			<form method="GET" action="/">
+				<table>
+					<tr>
+						<th>配信者名</th>
+						<td><input type="text" name="name" /></td>
+					</tr>
+					<tr>
+						<th>TwitchID</th>
+						<td><input type="text" name="twitchid" /></td>
+					</tr>
+					<tr>
+						<th>ニコニココミュニティ</th>
+						<td><input type="text" name="comid" /></td>
+					</tr>
+					<tr>
+						<th>アイコン</th>
+						<td><input type="file" name="file_icon"
+								   accept=".jpg,.gif,.png,image/gif,image/jpeg,image/png" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="buttonrow">
+							<input type="submit" value="登録" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+			
+		<!-- 参照時画面表示 -->
+		<div id="ref">
 			<table>
 				<tr>
-					<th>コマンド</th>
-					<td>
-						<select name="command">
-							<option value="1">Insert</option>
-							<option value="2">Update</option>
-							<option value="3">Delete</option>
-						</select>
-					</td>
-					<th>テーブル</th>
-					<td>
-						<select name="table">
-							<option value="user">user</option>
-						</select>
-					</td>
+					<th>ID</th>
+					<th>配信者名</th>
+					<th>TwitchID</th>
+					<th>ニコニココミュニティ</th>
+					<th>アイコンパス</th>
 				</tr>
-				<tr>
-					<th>パラメータ:検索</th>
-					<td colspan="3"><textarea cols="80" rows="10" name="param_search"></textarea></td>
-				</tr>
-				<tr>
-					<th>パラメータ:値</th>
-					<td colspan="3"><textarea cols="80" rows="10" name="param_value"></textarea></td>
-				</tr>
-
-				<tr>
-					<td colspan="4" id="buttonrow">
-						<input type="submit" value="実行" id="button_submit">
-					</td>
+				<tr class="data" id="1">
+					<td>1</td>
+					<td class="u_name">Cma</td>
+					<td class="u_twitch">cma2819</td>
+					<td class="u_comid">co12345678</td>
+					<td>1.png</td>
+					<td><a href="javascript:updateById(1)">[ 編集 ]</a></td>
 				</tr>
 			</table>
-		</form>
+		</div>
+		
+		<!-- 修正時画面表示 -->
+		<div id="update" class="form">
+			<form method="GET" action="/">
+				<table>
+					<tr>
+						<th>ID</th>
+						<td><input type="text" name="uid" /></td>
+					</tr>
+					<tr>
+						<th>配信者名</th>
+						<td><input type="text" name="name" /></td>
+					</tr>
+					<tr>
+						<th>TwitchID</th>
+						<td><input type="text" name="twitchid" /></td>
+					</tr>
+					<tr>
+						<th>ニコニココミュニティ</th>
+						<td><input type="text" name="comid" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" class="buttonrow">
+							<input type="submit" value="修正" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
 	</div>
 	<div id="footer">
 		<p>&copy; 2017 cma2819</p>
