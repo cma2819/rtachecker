@@ -27,7 +27,7 @@ div.stream table{
 	border-collapse:collapse;
 	background-color:white;}
 
-div.stream table th,td {
+div.stream table th,div.stream table td {
 	border:1px #bcbcff solid;
 	padding:5px;
 }

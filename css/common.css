@@ -44,6 +44,7 @@ a, a:active,a :hover, a:visited {
 #header #block {
 	overflow:hidden;
 	width:90%;
+	height:100%;
 	margin:0 auto;
 }
 #header h1 {
@@ -51,6 +52,7 @@ a, a:active,a :hover, a:visited {
 	width:320px;
 	display:inline-block;
 	float:left;
+	font-size:32px;
 }
 #header h1 a{
 	color:#202020;
@@ -68,26 +70,48 @@ a, a:active,a :hover, a:visited {
 	height:36px;
 	cursor:pointer;
 }
-#header .list_menu {
-	margin-top:20px;
-	display:inline-block;
+#header div#head_menu{
 	float:right;
-	color:#202020;
-	vertical-align:middle;
+	height:100%;
 }
-#header .list_menu a{
+#header #list_menu {
+	display:inline-block;
 	color:#202020;
+}
 
+#header #list_menu a{
+	color:#202020;
 	padding-top:5px;
 	padding-left:10px;
 	padding-right:48px;
+	margin-bottom:10px;
 }
-#header .list_menu a:hover{
+
+#header #list_menu a:hover{
 	border-bottom:2px #404040 solid;
 	background-color:rgba(255,255,255,0.5)
 }
-#header div#head_menu{
-	float:right;
+
+#header #user_info{
+	padding-top:5px;
+	display:inline-block;
+	font-size:12px;
+}
+
+#header #user_info table{
+	height:40px;
+	margin:auto;
+	border-collapse:collapse;
+	border:none;
+}
+
+#header #user_info td {
+	padding:0px 5px 0px 5px;
+}
+
+#header #user_info td#user_menu {
+	text-align:right;
+	border-top:1px rgba(64,64,64, 0.8) solid;
 }
 
 #header h2 {
@@ -95,9 +119,17 @@ a, a:active,a :hover, a:visited {
 	margin-bottom:0;
 	text-align:right;
 }
+
+#header #message {
+	width:90%;
+	margin:0 auto;
+	border-bottom:1px #bcbcff solid;
+	background-color:#feffff;
+
+}
 /* ヘッダ分の余白 */
 div#margin_head {
-	height:50px;
+	height:80px;
 }
 
 /* Body */

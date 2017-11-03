@@ -12,7 +12,7 @@
 	}
 </style>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script src="js/showpage.js" defer></script>
+<script src="js/common.js" defer></script>
 
 </head>
 
@@ -23,11 +23,34 @@
 		<span class="icon_menu">
 			<img alt="icon_menu" src="img/icon_menu.png" width="32px" height="32px" />
 		</span>
-		<div class="list_menu">
-			<a href="javascript:void(0)">登録申請</a>
-			<a href="./manage.html">管理ページ</a>
-
+		<div id="head_menu">
+			<div id="list_menu">
+				<table>
+					<tr>
+						<td>
+							<a href="javascript:void(0)">登録申請</a>
+						</td>
+						<td>
+							<a href="./manage.html">管理ページ</a>
+						</td>
+					</tr>
+				</table>		
+			</div>
+			<div id="user_info">
+				<table>
+					<tr>
+						<td>Welcome, Cma</td>
+					</tr>
+					<tr>
+						<td id="user_menu"><a href="./">Logout</a></td>
+					</tr>
+				</table>
+			</div>
 		</div>
+	</div>
+	<div id="message">
+		ログアウトしました。
+		<a href="javascript:void(0)" onclick="outMessage()">×</a>
 	</div>
 </div>
 
