@@ -37,7 +37,7 @@ function changePulldown() {
 */
 function updateById(id) {
 	var pulldown = $('select[name=command]');
-	var idform = $('div#update input[name=uid]');
+	var idform = $('div#update select[name=uid]');
 	var nameform = $('div#update input[name=name]');
 	var twitchform = $('div#update input[name=twitchid]');
 	var nicoform = $('div#update input[name=comid]');
@@ -50,6 +50,18 @@ function updateById(id) {
 	pulldown.val(3);
 	toggleView(3);
 	
+}
+
+/*
+	コミュニティ編集時
+*/
+function onblurComid(eleid) {
+	var selecter = '#' + eleid;
+	var formElm = $(selecter);
+	var formTxt = formElm.val();
+	if(formTxt.indexOf('co') < 0){
+		formElm.val('co' + formTxt);
+	}
 }
 
 /*

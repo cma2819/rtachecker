@@ -66,7 +66,7 @@
 					</tr>
 					<tr>
 						<th>ニコニココミュニティ</th>
-						<td><input type="text" name="comid" /></td>
+						<td><input type="text" name="comid" onblur="onblurComid('regit_comid')" id="regit_comid" /></td>
 					</tr>
 					<tr>
 						<th>アイコン</th>
@@ -108,12 +108,12 @@
 			<form method="GET" action="/">
 				<table>
 					<tr>
-						<th>ID</th>
-						<td><input type="text" name="uid" /></td>
-					</tr>
-					<tr>
-						<th>配信者名</th>
-						<td><input type="text" name="name" /></td>
+						<th>修正対象</th>
+						<td><select name="uid">
+							<option value="1">1:Cma</option>
+							<option value="2">2:Enu</option>
+
+						</select></td>
 					</tr>
 					<tr>
 						<th>TwitchID</th>
@@ -121,7 +121,7 @@
 					</tr>
 					<tr>
 						<th>ニコニココミュニティ</th>
-						<td><input type="text" name="comid" /></td>
+						<td><input type="text" name="comid" onblur="onblurComid('update_comid')" id="update_comid"/></td>
 					</tr>
 					<tr>
 						<th>削除</th>
